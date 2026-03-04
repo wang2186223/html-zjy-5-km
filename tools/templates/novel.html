@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // 默认给谷歌发送授权信号，消除“数据黑盒”风险
+  gtag('consent', 'default', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+</script>
     <meta charset=    // Natural 72-hour event    // Track PageView with 72-hour prevention
     if (shouldTrackEvent('PageView_Novel')) {
         fbq('track', 'PageView');
